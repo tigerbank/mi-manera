@@ -29,7 +29,12 @@ function FeaturedProduct2() {
           </Text>
         </Box>
       </Box>
-      <Heading as="h3" textAlign="center" fontSize="15px">
+      <Heading
+        as="h3"
+        textAlign="center"
+        fontSize="15px"
+        fontFamily="AkzidenzGrotesk-Medium"
+      >
         Sed egestas, nibh a condimentum imperdiet
       </Heading>
       <Box w="534px" ml="auto" mr="auto">
