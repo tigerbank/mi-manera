@@ -11,7 +11,7 @@ function BottomNav() {
   return (
     <Box d="flex" justifyContent="space-between" mb="70px">
       <Box w="175px">
-        <Heading as="h4">About</Heading>
+        <Heading as="h4">ABOUT</Heading>
         <UnorderedList m="0px" p="0px">
           {nav1.map((item) => (
             <Link passHref key={item} href="#">
@@ -84,7 +84,7 @@ function BottomNav() {
       </Box>
 
       <Box w="362px">
-        <Heading as="h4">NEWESLETTER</Heading>
+        <Heading as="h4">NEWSLETTER</Heading>
       </Box>
     </Box>
   );
