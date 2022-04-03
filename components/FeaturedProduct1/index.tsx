@@ -9,10 +9,6 @@ function FeaturedProduct1() {
 
   const MotionText = motion(Text);
 
-  // scrollY.onChange((y) => {
-  //   console.log(y);
-  // });
-
   return (
     <Box
       overflow="hidden"

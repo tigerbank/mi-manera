@@ -17,8 +17,8 @@ function BottomNav() {
   const nav4 = ['Term & Conditions', 'Privacy Policy', 'Cookies Policy'];
 
   return (
-    <Box d="flex" justifyContent="space-between" mb="70px" flexWrap="wrap">
-      <Box w="175px">
+    <Box d="flex" justifyContent="space-between" flexWrap="wrap">
+      <Box w="175px" mb="70px">
         <Heading
           as="h4"
           mb="30px"
@@ -44,7 +44,7 @@ function BottomNav() {
           ))}
         </UnorderedList>
       </Box>
-      <Box w="175px">
+      <Box w="175px" mb="70px">
         <Heading
           as="h4"
           mb="30px"
@@ -70,7 +70,7 @@ function BottomNav() {
           ))}
         </UnorderedList>
       </Box>
-      <Box w="175px">
+      <Box w="175px" mb="70px">
         <Heading
           as="h4"
           mb="30px"
@@ -96,7 +96,7 @@ function BottomNav() {
           ))}
         </UnorderedList>
       </Box>
-      <Box w="175px">
+      <Box w="175px" mb="70px">
         <Heading
           as="h4"
           mb="30px"
@@ -123,7 +123,7 @@ function BottomNav() {
         </UnorderedList>
       </Box>
 
-      <Box w="362px" mt={{ base: '30px', lg: '0px' }}>
+      <Box w="362px" mt={{ base: '30px', lg: '0px' }} mb="70px">
         <Heading
           as="h4"
           mb="30px"

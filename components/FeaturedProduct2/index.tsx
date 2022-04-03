@@ -9,10 +9,6 @@ function FeaturedProduct2() {
 
   const MotionText = motion(Text);
 
-  // scrollY.onChange((y) => {
-  //   console.log(y);
-  // });
-
   return (
     <Box
       width={{ base: '100%', lg: '1125px' }}

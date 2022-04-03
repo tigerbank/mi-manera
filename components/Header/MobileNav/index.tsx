@@ -6,7 +6,6 @@ import {
   DrawerCloseButton,
   UnorderedList,
   useDisclosure,
-  DrawerFooter,
   Text,
   Accordion,
   AccordionItem,
@@ -27,8 +26,8 @@ const subNavItems = [
   'BAZAAR',
   'ELLE',
   'GQ',
-  'L OFFICIEL THAILAND',
-  'L OFFICIEL USA',
+  "L'OFFICIEL THAILAND",
+  "L'OFFICIEL USA",
   'NUMERO',
   'VOGUE',
 ];

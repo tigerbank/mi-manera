@@ -34,7 +34,10 @@ function BuyStrips() {
           CUSTOMER SERVICE
         </Heading>
         <Text fontSize="14px" color="#666666" lineHeight="24px">
-          <u>info@mimanera.com</u> <br />
+          <u>
+            <a href="mailto:info@mimanera.com">info@mimanera.com</a>
+          </u>{' '}
+          <br />
           +66 96 3722 3462 <br />
           Monday to Friday, 10 am to 5 pm GMT time
         </Text>

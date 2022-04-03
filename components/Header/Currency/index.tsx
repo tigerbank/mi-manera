@@ -1,11 +1,8 @@
 import {
   Popover,
   Box,
-  PopoverArrow,
   PopoverBody,
-  PopoverCloseButton,
   PopoverContent,
-  PopoverHeader,
   PopoverTrigger,
   Text,
 } from '@chakra-ui/react';
@@ -25,7 +22,12 @@ function Currency() {
             justifySelf="left"
             justifyContent="left"
           >
-            <Text mr="7px">
+            <Text
+              mr="7px"
+              _hover={{
+                color: '#a3a3a3',
+              }}
+            >
               <Link href="#">TH-THB</Link>
             </Text>
             <Box w="8px">
@@ -48,7 +50,16 @@ function Currency() {
           borderRadius="0px"
         >
           <PopoverBody>
-            <Link href="#">US-USD</Link>
+            <Link href="#" passHref>
+              <Text
+                cursor="pointer"
+                _hover={{
+                  color: '#a3a3a3',
+                }}
+              >
+                US-USD
+              </Text>
+            </Link>
           </PopoverBody>
         </PopoverContent>
       </Popover>

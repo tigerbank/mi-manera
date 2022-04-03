@@ -6,15 +6,11 @@ import { motion, useViewportScroll, useTransform } from 'framer-motion';
 function Hero() {
   const [showVideo, setShowVideo] = useState(false);
   const { scrollY } = useViewportScroll();
-  const scale = useTransform(scrollY, [0, 400], [1, 0.15]);
-  const top = useTransform(scrollY, [0, 400, 800], [68, 20, 20]);
+  const scale = useTransform(scrollY, [0, 700], [1, 0.12]);
+  const top = useTransform(scrollY, [0, 700, 800], [68, 20, 20]);
   const width = useTransform(scrollY, [0, 400], [370, 195]);
 
   const MotionBox = motion(Box);
-
-  // scrollY.onChange((y) => {
-  //   console.log(y);
-  // });
 
   useEffect(() => {
     setTimeout(() => {

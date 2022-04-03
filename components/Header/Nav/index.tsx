@@ -1,22 +1,7 @@
-import {
-  Box,
-  ListItem,
-  UnorderedList,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverHeader,
-  PopoverBody,
-  PopoverFooter,
-  PopoverArrow,
-  PopoverCloseButton,
-  PopoverAnchor,
-  Text,
-  Button,
-} from '@chakra-ui/react';
+import { Box, ListItem, UnorderedList, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function Nav() {
   const navItems = ['WOMEN', 'COLLECTIONS', 'EDITORIAL', 'NEWS', 'STORIES'];
@@ -25,8 +10,8 @@ function Nav() {
     'BAZAAR',
     'ELLE',
     'GQ',
-    'L OFFICIEL THAILAND',
-    'L OFFICIEL USA',
+    "L'OFFICIEL THAILAND",
+    "L'OFFICIEL USA",
     'NUMERO',
     'VOGUE',
   ];
@@ -96,7 +81,7 @@ function Nav() {
                   {subNavItems.map((item) => {
                     return (
                       <Link key={item} passHref href="#">
-                        <ListItem
+                        <MotionListItem
                           cursor="pointer"
                           color="#deddde"
                           listStyleType="none"
@@ -104,9 +89,13 @@ function Nav() {
                           mt="20px"
                           fontSize="14px"
                           _hover={{ color: '#fff' }}
+                          whileHover={{
+                            fontSize: '18px',
+                            fontFamily: 'AkzidenzGrotesk-Medium',
+                          }}
                         >
                           {item}
-                        </ListItem>
+                        </MotionListItem>
                       </Link>
                     );
                   })}
