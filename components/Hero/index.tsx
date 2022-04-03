@@ -8,8 +8,7 @@ function Hero() {
   const { scrollY } = useViewportScroll();
   const scale = useTransform(scrollY, [0, 400], [1, 0.15]);
   const top = useTransform(scrollY, [0, 400, 800], [68, 20, 20]);
-
-  const width = useTransform(scrollY, [0, 400], [800, 195]);
+  const width = useTransform(scrollY, [0, 400], [370, 195]);
 
   const MotionBox = motion(Box);
 
@@ -39,7 +38,13 @@ function Hero() {
         width={{ base: '100%', xl: '1350px' }}
         height="800px"
       >
-        <Image src="/images/hero.jpg" layout="fill" alt="" objectFit="cover" />
+        <Image
+          priority
+          src="/images/hero.jpg"
+          layout="fill"
+          alt=""
+          objectFit="cover"
+        />
       </Box>
 
       {showVideo && (
@@ -85,7 +90,7 @@ function Hero() {
         d={{ base: 'block', xl: 'none' }}
         width="100%"
         textAlign="center"
-        zIndex="9999"
+        zIndex="99"
         position="fixed"
         overflow="hidden"
         top="68px"

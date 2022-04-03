@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react';
 import React from 'react';
 import Currency from './Currency';
 import Nav from './Nav';
+import MobileNav from './MobileNav';
 import UserMenu from './UserMenu';
 
 function Header() {
@@ -19,6 +20,7 @@ function Header() {
       zIndex={9999}
       bg="#fff"
     >
+      <MobileNav />
       <Currency />
       <Nav />
       <UserMenu />

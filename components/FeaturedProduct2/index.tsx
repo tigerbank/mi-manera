@@ -27,8 +27,6 @@ function FeaturedProduct2() {
             src="/images/featured-product2.jpg"
             layout="fill"
             alt=""
-            width="2250"
-            height="1432"
             objectFit="cover"
           />
           <MotionText

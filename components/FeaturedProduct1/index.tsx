@@ -22,7 +22,7 @@ function FeaturedProduct1() {
       mb="95px"
     >
       <Box position="relative">
-        <Box width="534px" zIndex="2">
+        <Box width="534px" zIndex="2" ml="auto" mr="auto">
           <Image
             src="/images/featured-product1.jpg"
             layout="responsive"
@@ -56,7 +56,12 @@ function FeaturedProduct1() {
       >
         Sed egestas, nibh a condimentum imperdiet
       </Heading>
-      <Text textAlign="center">
+      <Text
+        textAlign="center"
+        w={{ base: '95%', md: '534px' }}
+        ml="auto"
+        mr="auto"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare,
         nisl non rhoncus commodo, turpis elit ultricies justo, vitae molestie
         quam justo ut lacus. Proin vitae

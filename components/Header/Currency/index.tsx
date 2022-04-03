@@ -10,15 +10,24 @@ import {
   Text,
 } from '@chakra-ui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 function Currency() {
   return (
-    <Box zIndex={9999}>
+    <Box zIndex={9999} mr={{ base: 'auto', lg: '0' }}>
       <Popover trigger="hover">
         <PopoverTrigger>
-          <Box d="flex" alignItems="center">
-            <Text mr="7px">TH-THB</Text>
+          <Box
+            d="flex"
+            alignItems="center"
+            mr="auto"
+            justifySelf="left"
+            justifyContent="left"
+          >
+            <Text mr="7px">
+              <Link href="#">TH-THB</Link>
+            </Text>
             <Box w="8px">
               <Image
                 src="/images/icon-arrow-down.png"
@@ -38,7 +47,9 @@ function Currency() {
           border="none"
           borderRadius="0px"
         >
-          <PopoverBody>US-USD</PopoverBody>
+          <PopoverBody>
+            <Link href="#">US-USD</Link>
+          </PopoverBody>
         </PopoverContent>
       </Popover>
     </Box>
