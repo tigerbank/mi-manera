@@ -1,20 +1,37 @@
 import { Box, Heading, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import React from 'react';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 function FeaturedProduct2() {
+  const { scrollY } = useViewportScroll();
+  const top = useTransform(scrollY, [1598, 1900], [220, 570]);
+
+  const MotionText = motion(Text);
+
+  // scrollY.onChange((y) => {
+  //   console.log(y);
+  // });
+
   return (
-    <Box width="1125px" ml="auto" mr="auto" mb="95px">
+    <Box
+      width={{ base: '100%', lg: '1125px' }}
+      ml="auto"
+      mr="auto"
+      mb="95px"
+      overflow="hidden"
+    >
       <Box position="relative">
-        <Box width="1125px" zIndex="2">
+        <Box width={{ base: '100%', lg: '1125px' }} height="716px" zIndex="2">
           <Image
             src="/images/featured-product2.jpg"
-            layout="responsive"
+            layout="fill"
             alt=""
             width="2250"
             height="1432"
+            objectFit="cover"
           />
-          <Text
+          <MotionText
             fontSize="100px"
             zIndex="10"
             color="#fff"
@@ -24,9 +41,10 @@ function FeaturedProduct2() {
             height="100%"
             top="220px"
             fontFamily="AkzidenzGrotesk-Medium"
+            style={{ top: top }}
           >
             THINGS
-          </Text>
+          </MotionText>
         </Box>
       </Box>
       <Heading
@@ -34,6 +52,9 @@ function FeaturedProduct2() {
         textAlign="center"
         fontSize="15px"
         fontFamily="AkzidenzGrotesk-Medium"
+        mt="20px"
+        mb="15px"
+        color="#282728"
       >
         Sed egestas, nibh a condimentum imperdiet
       </Heading>

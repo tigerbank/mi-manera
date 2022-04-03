@@ -14,10 +14,12 @@ const Home: NextPage = () => {
   return (
     <Box>
       <Header />
-      <Hero />
-      <FeaturedProduct1 />
-      <FeaturedProduct2 />
-      <FeaturedProduct3 />
+      <Box as="main" pt="48px">
+        <Hero />
+        <FeaturedProduct1 />
+        <FeaturedProduct2 />
+        <FeaturedProduct3 />
+      </Box>
 
       <Footer />
     </Box>

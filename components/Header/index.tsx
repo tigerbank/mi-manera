@@ -1,5 +1,6 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import React from 'react';
+import Currency from './Currency';
 import Nav from './Nav';
 import UserMenu from './UserMenu';
 
@@ -11,8 +12,14 @@ function Header() {
       alignItems="center"
       justifyContent="space-between"
       px="33px"
+      position="fixed"
+      top="0"
+      left="0"
+      w="100%"
+      zIndex={9999}
+      bg="#fff"
     >
-      <Text> TH-THB</Text>
+      <Currency />
       <Nav />
       <UserMenu />
     </Box>

@@ -8,7 +8,7 @@ function Nav() {
   const MotionListItem = motion(ListItem);
 
   return (
-    <Box>
+    <Box d={{ base: 'none', md: 'block' }}>
       <UnorderedList d="flex" gap="44px">
         {navItems.map((item) => (
           <MotionListItem
@@ -16,11 +16,12 @@ function Nav() {
             key={item}
             listStyleType="none"
             whileHover={{
-              scale: 1.8,
+              scale: 2.5,
               fontWeight: 'bold',
-              paddingLeft: '25px',
-              paddingRight: '25px',
+              marginLeft: '44px',
+              marginRight: '44px',
             }}
+            transition={{ type: 'tween' }}
           >
             <Link href="#">{item}</Link>
           </MotionListItem>
